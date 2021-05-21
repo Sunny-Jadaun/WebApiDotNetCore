@@ -29,6 +29,7 @@ namespace myApiDotnetcore
         {
 
             services.AddControllers();
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<ICharacterServices,CharacterServices>();
             services.AddSwaggerGen(c =>
             {
